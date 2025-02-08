@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTodo, deleteTodo } from "../features/todo/todoSlice";
+import { toggleTodo, deleteTodo } from "./todoSlice";
 
-const TodoList = () => {
+const Todos = () => {
     const todos = useSelector((state) => state.todos);
     const dispatch = useDispatch();
 
@@ -32,4 +32,4 @@ const TodoList = () => {
     );
 };
 
-export default TodoList;
+export default Todos;
